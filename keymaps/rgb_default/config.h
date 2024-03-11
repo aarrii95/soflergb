@@ -36,7 +36,7 @@
 
 #define CUSTOM_FONT
 #define CUSTOM_LAYER_READ //if you remove this it causes issues - needs better guarding
-
+#define NO_ACTION_TAPPING
 
 #define QUICK_TAP_TERM 0
 #ifdef TAPPING_TERM

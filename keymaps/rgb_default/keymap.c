@@ -144,7 +144,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|------+-------+--------+--------+--------+------|                   |--------+-------+--------+--------+--------+---------|
   KC_LCTL,  KC_ALL, KC_SAV, KC_BTN1, KC_BTN2, KC_BTN3,                   _______, KC_LEFT, KC_DOWN, KC_RGHT, _______, KC_ENT,
   //|------+-------+--------+--------+--------+------|  ===  |   |  ===  |--------+-------+--------+--------+--------+---------|
-  KC_LSFT, KC_UNDO, KC_CUT, KC_COPY, KC_PSTE, _______, _______, _______, _______,  _______,  _______,  _______, _______, _______,
+  KC_LSFT, KC_UNDO, KC_CUT, KC_COPY, KC_PSTE, _______, _______, _______, KC_BTN5,  KC_BTN4,  _______,  _______, _______, _______,
   //|------+-------+--------+--------+--------+------|  ===  |   |  ===  |--------+-------+--------+--------+--------+---------|
                  KC_BSLS, KC_LGUI, KC_LALT, KC_LOWER,  KC_ENT,   KC_ENT, KC_RAISE,  KC_RALT, KC_RGUI, KC_RCTL
   //            \--------+--------+--------+---------+-------|   |--------+---------+--------+---------+-------/
@@ -461,9 +461,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 bool encoder_update_user(uint8_t index, bool clockwise) {
     if (index == 0) {
          if (clockwise) {
-            tap_code(KC_DOWN);
+            tap_code(KC_WH_D);
         } else {
-            tap_code(KC_UP);
+            tap_code(KC_WH_U);
         }
     } else if (index == 1) {
         if (clockwise) {
