@@ -13,6 +13,8 @@ The current (temporary) build guide and a build log is available here: [SofleKey
 I flashed this files on my sofle with qmk msys. Install QMK MSYS. The installer will create a qmk_firmware folder on your user foler.
 Then copy all the files from the repo to the ```qmk_firmware\keyboards\sofle``` folder.
 
+Open QMK MSYS and flash the sofle keyboard this way.
+
 Connect left side and run 
 ```
 qmk flash -kb sofle/rev1 -km rgb_default -bl avrdude-split-left
