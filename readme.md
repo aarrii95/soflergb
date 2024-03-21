@@ -11,5 +11,11 @@ The current (temporary) build guide and a build log is available here: [SofleKey
 * Hardware Availability: [PCB & Case Data](https://github.com/josefadamcik/SofleKeyboard)
 
 I flashed this files on my sofle with qmk msys.
-Connect left side and run qmk flash -kb sofle/rev1 -km rgb_default -bl avrdude-split-left
-Disconnect the left half, connect the right one and repeat the process with this command qmk flash -kb sofle/rev1 -km rgb_default -bl avrdude-split-right
+Connect left side and run 
+```
+qmk flash -kb sofle/rev1 -km rgb_default -bl avrdude-split-left
+```
+Disconnect the left half, connect the right one and repeat the process with this command
+```
+qmk flash -kb sofle/rev1 -km rgb_default -bl avrdude-split-right
+```
