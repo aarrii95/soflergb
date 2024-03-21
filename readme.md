@@ -10,7 +10,9 @@ The current (temporary) build guide and a build log is available here: [SofleKey
 * Hardware Supported: SofleKeyboard PCB, ProMicro  
 * Hardware Availability: [PCB & Case Data](https://github.com/josefadamcik/SofleKeyboard)
 
-I flashed this files on my sofle with qmk msys.
+I flashed this files on my sofle with qmk msys. Install QMK MSYS. The installer will create a qmk_firmware folder on your user foler.
+Then copy all the files from the repo to the ```qmk_firmware\keyboards\sofle``` folder.
+
 Connect left side and run 
 ```
 qmk flash -kb sofle/rev1 -km rgb_default -bl avrdude-split-left
